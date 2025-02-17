@@ -17,71 +17,79 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cybergames
 build_property.RootNamespace = Cybergames
-build_property.ProjectDir = /Users/mustafaalnaser/Desktop/cybergames/Cybergames/
+build_property.ProjectDir = /home/aspire5734z/Documents/GitHub/backup/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/mustafaalnaser/Desktop/cybergames/Cybergames
+build_property.MSBuildProjectDirectory = /home/aspire5734z/Documents/GitHub/backup
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/Account/Login.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/Account/Logout.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/Account/Register.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/_ViewImports.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Areas/Identity/Pages/_ViewStart.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/Error.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Admin/Games/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vR2FtZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Admin/Games/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vR2FtZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/Index.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/Privacy.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/Shared/_LoginPartial.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/_ViewImports.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/_ViewStart.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Pages/Shared/_Layout.cshtml]
+[/home/aspire5734z/Documents/GitHub/backup/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-frgts3i982

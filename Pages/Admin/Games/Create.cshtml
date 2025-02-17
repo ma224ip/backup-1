@@ -1,0 +1,55 @@
+@page
+@model Cybergames.Pages.Admin.Games.CreateModel
+@{
+    ViewData["Title"] = "Add New Game";
+}
+
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Add New Game</h1>
+
+    <form method="post" class="max-w-2xl">
+        <div class="mb-4">
+            <label asp-for="Game.Title" class="block text-gray-700 text-sm font-bold mb-2">Title</label>
+            <input asp-for="Game.Title" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Title" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Price" class="block text-gray-700 text-sm font-bold mb-2">Price</label>
+            <input asp-for="Game.Price" type="number" step="0.01" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Price" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Description" class="block text-gray-700 text-sm font-bold mb-2">Description</label>
+            <textarea asp-for="Game.Description" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4"></textarea>
+            <span asp-validation-for="Game.Description" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Cover" class="block text-gray-700 text-sm font-bold mb-2">Cover URL</label>
+            <input asp-for="Game.Cover" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Cover" class="text-red-500 text-xs"></span>
+        </div>
+
+        @for (int i = 1; i <= 5; i++)
+        {
+            <div class="mb-4">
+                <label asp-for="Game.@("Img" + i)" class="block text-gray-700 text-sm font-bold mb-2">Image @i URL</label>
+                <input asp-for="Game.@("Img" + i)" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                <span asp-validation-for="Game.@("Img" + i)" class="text-red-500 text-xs"></span>
+            </div>
+        }
+
+        <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Create Game
+            </button>
+            <a href="/Admin/Games" class="text-blue-500 hover:text-blue-700">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

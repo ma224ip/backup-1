@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Cybergames.csproj": {}
+    "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj": {}
   },
   "projects": {
-    "/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Cybergames.csproj": {
+    "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Cybergames.csproj",
+        "projectUniqueName": "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj",
         "projectName": "Cybergames",
-        "projectPath": "/Users/mustafaalnaser/Desktop/cybergames/Cybergames/Cybergames.csproj",
-        "packagesPath": "/Users/mustafaalnaser/.nuget/packages/",
-        "outputPath": "/Users/mustafaalnaser/Desktop/cybergames/Cybergames/obj/",
+        "projectPath": "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj",
+        "packagesPath": "/home/aspire5734z/.nuget/packages/",
+        "outputPath": "/home/aspire5734z/Documents/GitHub/backup/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mustafaalnaser/.nuget/NuGet/NuGet.Config"
+          "/home/aspire5734z/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -91,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

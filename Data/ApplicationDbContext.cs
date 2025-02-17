@@ -29,5 +29,22 @@ namespace Cybergames
             builder.Entity<IdentityRole>().HasData(admin,clinet);
 
         }
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<Game> Games { get; set; }
     }
+
+    //public class ApplicationDbContext : DbContext
+    //{
+    //    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+    //        : base(options)
+    //    {
+    //    }
+
+    //    public DbSet<Game> Games { get; set; }
+    //}
 }
