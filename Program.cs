@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Cybergames;
-using Cybergames.Models; // Replace with your actual namespace
+using Cybergames.Data;
+using Cybergames.Models; 
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);

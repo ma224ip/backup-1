@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tp03mfH178k=",
+  "dgSpecHash": "pF7rDC5VTFU=",
   "success": true,
-  "projectFilePath": "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj",
+  "projectFilePath": "/home/aspire5734z/Documents/GitHub/Cybergames/Cybergames.csproj",
   "expectedPackageFiles": [
     "/home/aspire5734z/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/aspire5734z/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

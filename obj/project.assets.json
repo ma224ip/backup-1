@@ -8089,11 +8089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj",
+      "projectUniqueName": "/home/aspire5734z/Documents/GitHub/Cybergames/Cybergames.csproj",
       "projectName": "Cybergames",
-      "projectPath": "/home/aspire5734z/Documents/GitHub/backup/Cybergames.csproj",
+      "projectPath": "/home/aspire5734z/Documents/GitHub/Cybergames/Cybergames.csproj",
       "packagesPath": "/home/aspire5734z/.nuget/packages/",
-      "outputPath": "/home/aspire5734z/Documents/GitHub/backup/obj/",
+      "outputPath": "/home/aspire5734z/Documents/GitHub/Cybergames/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/aspire5734z/.nuget/NuGet/NuGet.Config"
