@@ -32,14 +32,35 @@
             <span asp-validation-for="Game.Cover" class="text-red-500 text-xs"></span>
         </div>
 
-        @for (int i = 1; i <= 5; i++)
-        {
-            <div class="mb-4">
-                <label asp-for="Game.@("Img" + i)" class="block text-gray-700 text-sm font-bold mb-2">Image @i URL</label>
-                <input asp-for="Game.@("Img" + i)" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
-                <span asp-validation-for="Game.@("Img" + i)" class="text-red-500 text-xs"></span>
-            </div>
-        }
+        <div class="mb-4">
+            <label asp-for="Game.Img1" class="block text-gray-700 text-sm font-bold mb-2">Image 1 URL</label>
+            <input asp-for="Game.Img1" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Img1" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Img2" class="block text-gray-700 text-sm font-bold mb-2">Image 2 URL</label>
+            <input asp-for="Game.Img2" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Img2" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Img3" class="block text-gray-700 text-sm font-bold mb-2">Image 3 URL</label>
+            <input asp-for="Game.Img3" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Img3" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Img4" class="block text-gray-700 text-sm font-bold mb-2">Image 4 URL</label>
+            <input asp-for="Game.Img4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Img4" class="text-red-500 text-xs"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Game.Img5" class="block text-gray-700 text-sm font-bold mb-2">Image 5 URL</label>
+            <input asp-for="Game.Img5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+            <span asp-validation-for="Game.Img5" class="text-red-500 text-xs"></span>
+        </div>
 
         <div class="flex items-center justify-between">
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">

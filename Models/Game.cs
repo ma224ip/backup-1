@@ -8,32 +8,32 @@ namespace Cybergames.Models
         public int ID { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
         [Required]
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
         [Required]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required]
         [Url]
-        public string Cover { get; set; }
+        public string? Cover { get; set; }
 
         [Url]
-        public string Img1 { get; set; }
+        public string? Img1 { get; set; }
 
         [Url]
-        public string Img2 { get; set; }
+        public string? Img2 { get; set; }
 
         [Url]
-        public string Img3 { get; set; }
+        public string? Img3 { get; set; }
 
         [Url]
-        public string Img4 { get; set; }
+        public string? Img4 { get; set; }
 
         [Url]
-        public string Img5 { get; set; }
+        public string? Img5 { get; set; }
     }
 }

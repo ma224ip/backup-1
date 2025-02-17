@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Cybergames.Models;
-//using Cybergames.Data;
+using Cybergames.Data;
 #nullable disable
 
 namespace Cybergames.Pages.Admin.Games

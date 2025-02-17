@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Cybergames.Models;
-//using Cybergames.Data;
+using Cybergames.Data;
 
 namespace Cybergames.Pages.Admin.Games
 {
