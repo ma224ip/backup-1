@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cybergames", "Cybergames.csproj", "{15829BCA-5AE8-4D4D-A00B-816208AB5585}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15829BCA-5AE8-4D4D-A00B-816208AB5585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15829BCA-5AE8-4D4D-A00B-816208AB5585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15829BCA-5AE8-4D4D-A00B-816208AB5585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15829BCA-5AE8-4D4D-A00B-816208AB5585}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F8CDF7E-732D-4996-B90C-6C604AEE8EBA}
+	EndGlobalSection
+EndGlobal
