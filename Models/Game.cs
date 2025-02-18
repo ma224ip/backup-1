@@ -18,6 +18,9 @@ namespace Cybergames.Models
         public string? Description { get; set; }
 
         [Required]
+        public string? Category { get; set; }
+
+        [Required]
         [Url]
         public string? Cover { get; set; }
 

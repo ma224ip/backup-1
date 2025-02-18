@@ -3,18 +3,128 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CyberGames</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+
+<section class="hero d-flex align-items-center bg-black">
+    <canvas id="fireworksCanvas"></canvas>
+    <div class="position-relative z-1 text-center text-white w-100">
+        <div class="row justify-content-center mx-0">
+            <div class="col-lg-8">
+                <h1 class="display-1">Welcome to CyberGames</h1>
+                <p class="lead mb-5">Creating exceptional web experiences that spark innovation and drive success. Let's bring your digital vision to life.</p>
+                <a href="#services" class="btn btn-primary btn-lg px-4 me-3">Discover More</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get Started</a>
             </div>
         </div>
     </div>
-</div>
+</section>
+    <script>
+                (function() {
+                    const canvas = document.getElementById('fireworksCanvas');
+                    const ctx = canvas.getContext('2d');
+
+                    function resizeCanvas() {
+                        canvas.width = canvas.offsetWidth;
+                        canvas.height = canvas.offsetHeight;
+                    }
+                    
+                    resizeCanvas();
+                    window.addEventListener('resize', resizeCanvas);
+
+                    const particles = [];
+                    const fireworks = [];
+
+                    class Firework {
+                        constructor() {
+                            this.x = Math.random() * canvas.width;
+                            this.y = canvas.height;
+                            this.targetY = Math.random() * (canvas.height * 0.5);
+                            this.speed = 3;
+                            this.color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                        }
+
+                        update() {
+                            this.y -= this.speed;
+                            return this.y > this.targetY;
+                        }
+
+                        draw() {
+                            ctx.fillStyle = this.color;
+                            ctx.beginPath();
+                            ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
+                            ctx.fill();
+                        }
+
+                        explode() {
+                            for (let i = 0; i < 50; i++) {
+                                particles.push(new Particle(this.x, this.y, this.color));
+                            }
+                        }
+                    }
+
+                    class Particle {
+                        constructor(x, y, color) {
+                            this.x = x;
+                            this.y = y;
+                            this.color = color;
+                            const angle = Math.random() * Math.PI * 2;
+                            const speed = Math.random() * 5 + 2;
+                            this.velX = Math.cos(angle) * speed;
+                            this.velY = Math.sin(angle) * speed;
+                            this.life = 1;
+                        }
+
+                        update() {
+                            this.x += this.velX;
+                            this.y += this.velY;
+                            this.velY += 0.1;
+                            this.life -= 0.02;
+                            return this.life > 0;
+                        }
+
+                        draw() {
+                            ctx.fillStyle = this.color;
+                            ctx.globalAlpha = this.life;
+                            ctx.beginPath();
+                            ctx.arc(this.x, this.y, 1, 0, Math.PI * 2);
+                            ctx.fill();
+                        }
+                    }
+
+                    function animate() {
+                        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                        if (Math.random() < 0.05) {
+                            fireworks.push(new Firework());
+                        }
+
+                        for (let i = fireworks.length - 1; i >= 0; i--) {
+                            if (!fireworks[i].update()) {
+                                fireworks[i].explode();
+                                fireworks.splice(i, 1);
+                            } else {
+                                fireworks[i].draw();
+                            }
+                        }
+
+                        for (let i = particles.length - 1; i >= 0; i--) {
+                            if (!particles[i].update()) {
+                                particles.splice(i, 1);
+                            } else {
+                                particles[i].draw();
+                            }
+                        }
+
+                        ctx.globalAlpha = 1;
+                        requestAnimationFrame(animate);
+                    }
+                    animate();
+                })();
+            </script>
+
+
+
+
+
+ 
+  
