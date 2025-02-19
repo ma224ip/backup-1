@@ -20,6 +20,24 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<ApplicationDbContext>();
 
+// Add session support
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// Add HttpContextAccessor
+builder.Services.AddHttpContextAccessor();
+
+// Add CartService
+builder.Services.AddScoped<CartService>();
+
+// ... other services
+
+// Enable session
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -38,4 +56,5 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+app.UseSession();
 app.Run();
